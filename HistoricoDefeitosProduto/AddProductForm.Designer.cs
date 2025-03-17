@@ -2,15 +2,8 @@
 {
     partial class AddProductForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +15,6 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.txtSuborigem = new System.Windows.Forms.TextBox();
@@ -56,15 +45,15 @@
             this.txtSuborigem.Location = new System.Drawing.Point(12, 415);
             this.txtSuborigem.Name = "txtSuborigem";
             this.txtSuborigem.Size = new System.Drawing.Size(253, 20);
-            this.txtSuborigem.TabIndex = 38;
+            this.txtSuborigem.TabIndex = 17;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(12, 399);
-            this.label9.Name = "label8";
+            this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(62, 13);
-            this.label9.TabIndex = 37;
+            this.label9.TabIndex = 16;
             this.label9.Text = "Sub Origem";
             // 
             // txtOrigem
@@ -72,15 +61,15 @@
             this.txtOrigem.Location = new System.Drawing.Point(12, 367);
             this.txtOrigem.Name = "txtOrigem";
             this.txtOrigem.Size = new System.Drawing.Size(253, 20);
-            this.txtOrigem.TabIndex = 36;
+            this.txtOrigem.TabIndex = 15;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(12, 351);
-            this.label8.Name = "label7";
+            this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(40, 13);
-            this.label8.TabIndex = 35;
+            this.label8.TabIndex = 14;
             this.label8.Text = "Origem";
             // 
             // txtDefeito
@@ -88,15 +77,15 @@
             this.txtDefeito.Location = new System.Drawing.Point(12, 313);
             this.txtDefeito.Name = "txtDefeito";
             this.txtDefeito.Size = new System.Drawing.Size(178, 20);
-            this.txtDefeito.TabIndex = 40;
+            this.txtDefeito.TabIndex = 13;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(12, 297);
-            this.label7.Name = "label11";
+            this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(41, 13);
-            this.label7.TabIndex = 39;
+            this.label7.TabIndex = 12;
             this.label7.Text = "Defeito";
             // 
             // txtNomeProduto
@@ -104,7 +93,7 @@
             this.txtNomeProduto.Location = new System.Drawing.Point(12, 267);
             this.txtNomeProduto.Name = "txtNomeProduto";
             this.txtNomeProduto.Size = new System.Drawing.Size(178, 20);
-            this.txtNomeProduto.TabIndex = 34;
+            this.txtNomeProduto.TabIndex = 11;
             // 
             // label6
             // 
@@ -112,7 +101,7 @@
             this.label6.Location = new System.Drawing.Point(12, 251);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 13);
-            this.label6.TabIndex = 33;
+            this.label6.TabIndex = 10;
             this.label6.Text = "Produto";
             // 
             // txtNumeroSerie
@@ -120,7 +109,7 @@
             this.txtNumeroSerie.Location = new System.Drawing.Point(12, 219);
             this.txtNumeroSerie.Name = "txtNumeroSerie";
             this.txtNumeroSerie.Size = new System.Drawing.Size(178, 20);
-            this.txtNumeroSerie.TabIndex = 32;
+            this.txtNumeroSerie.TabIndex = 9;
             // 
             // label5
             // 
@@ -128,7 +117,7 @@
             this.label5.Location = new System.Drawing.Point(12, 203);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(73, 13);
-            this.label5.TabIndex = 31;
+            this.label5.TabIndex = 8;
             this.label5.Text = "Serial Number";
             // 
             // txtSetor
@@ -136,7 +125,7 @@
             this.txtSetor.Location = new System.Drawing.Point(12, 167);
             this.txtSetor.Name = "txtSetor";
             this.txtSetor.Size = new System.Drawing.Size(178, 20);
-            this.txtSetor.TabIndex = 30;
+            this.txtSetor.TabIndex = 7;
             // 
             // label4
             // 
@@ -144,7 +133,7 @@
             this.label4.Location = new System.Drawing.Point(12, 151);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(32, 13);
-            this.label4.TabIndex = 29;
+            this.label4.TabIndex = 6;
             this.label4.Text = "Setor";
             // 
             // txtLinha
@@ -152,7 +141,7 @@
             this.txtLinha.Location = new System.Drawing.Point(12, 121);
             this.txtLinha.Name = "txtLinha";
             this.txtLinha.Size = new System.Drawing.Size(178, 20);
-            this.txtLinha.TabIndex = 28;
+            this.txtLinha.TabIndex = 5;
             // 
             // label3
             // 
@@ -160,7 +149,7 @@
             this.label3.Location = new System.Drawing.Point(12, 105);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(33, 13);
-            this.label3.TabIndex = 27;
+            this.label3.TabIndex = 4;
             this.label3.Text = "Linha";
             // 
             // txtTurno
@@ -168,7 +157,7 @@
             this.txtTurno.Location = new System.Drawing.Point(12, 70);
             this.txtTurno.Name = "txtTurno";
             this.txtTurno.Size = new System.Drawing.Size(178, 20);
-            this.txtTurno.TabIndex = 26;
+            this.txtTurno.TabIndex = 3;
             // 
             // label2
             // 
@@ -176,7 +165,7 @@
             this.label2.Location = new System.Drawing.Point(12, 54);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 25;
+            this.label2.TabIndex = 2;
             this.label2.Text = "Turno";
             // 
             // txtFuncionario
@@ -184,7 +173,7 @@
             this.txtFuncionario.Location = new System.Drawing.Point(12, 25);
             this.txtFuncionario.Name = "txtFuncionario";
             this.txtFuncionario.Size = new System.Drawing.Size(253, 20);
-            this.txtFuncionario.TabIndex = 24;
+            this.txtFuncionario.TabIndex = 1;
             // 
             // label1
             // 
@@ -192,7 +181,7 @@
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 13);
-            this.label1.TabIndex = 23;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Colaborador";
             // 
             // txtDescricao
@@ -201,7 +190,7 @@
             this.txtDescricao.Multiline = true;
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(353, 151);
-            this.txtDescricao.TabIndex = 42;
+            this.txtDescricao.TabIndex = 18;
             // 
             // label10
             // 
@@ -209,7 +198,7 @@
             this.label10.Location = new System.Drawing.Point(341, 72);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(55, 13);
-            this.label10.TabIndex = 41;
+            this.label10.TabIndex = 19;
             this.label10.Text = "Descrição";
             // 
             // btnSalvar
@@ -217,7 +206,7 @@
             this.btnSalvar.Location = new System.Drawing.Point(341, 22);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
-            this.btnSalvar.TabIndex = 43;
+            this.btnSalvar.TabIndex = 20;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -252,11 +241,9 @@
             this.Text = "AddProductForm";
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
-
 
         private System.Windows.Forms.TextBox txtSuborigem;
         private System.Windows.Forms.Label label9;

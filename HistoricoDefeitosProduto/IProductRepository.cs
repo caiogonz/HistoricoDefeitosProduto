@@ -12,6 +12,7 @@ namespace HistoricoDefeitosProduto
         List<ProductDefect> GetBySerialNumber(string numeroSerie);
         void Add(ProductDefect product);
         void Update(ProductDefect product);
+        void Delete(ProductDefect product);
     }
 
 }

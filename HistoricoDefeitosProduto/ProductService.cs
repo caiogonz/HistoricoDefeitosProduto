@@ -34,6 +34,11 @@ namespace HistoricoDefeitosProduto
         {
             _repository.Update(product);
         }
+
+        public void DeleteProduct(ProductDefect product)
+        {
+            _repository.Delete(product);
+        }
     }
 
 }

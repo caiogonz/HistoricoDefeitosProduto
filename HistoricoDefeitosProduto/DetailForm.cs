@@ -14,7 +14,6 @@ namespace HistoricoDefeitosProduto
     {
         private readonly ProductDefect _product;
         private readonly ProductService _service;
-        private bool _usuarioAutorizado = true; 
 
         public DetailForm(ProductDefect product, ProductService service)
         {
@@ -22,7 +21,7 @@ namespace HistoricoDefeitosProduto
             _product = product;
             _service = service;
             LoadProductDetails();
-            btnEditar.Enabled = _usuarioAutorizado;
+            btnEditar.Enabled = true;
         }
 
         private void LoadProductDetails()
@@ -42,17 +41,43 @@ namespace HistoricoDefeitosProduto
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            // Se o usuário for autorizado, permita a edição.
-            // Aqui você pode habilitar os TextBoxes para edição e, ao salvar, chamar _service.UpdateProduct(_product);
-            if (_usuarioAutorizado)
+            // Habilitar os TextBoxes para edição
+            txtDefeito.ReadOnly = false;
+            txtOrigem.ReadOnly = false;
+            txtSuborigem.ReadOnly = false;
+            txtDescricao.ReadOnly = false;
+            txtNumeroSerie.ReadOnly = false;
+            txtNomeProduto.ReadOnly = false;
+            txtFuncionario.ReadOnly = false;
+            txtTurno.ReadOnly = false;
+            txtLinha.ReadOnly = false;
+            txtSetor.ReadOnly = false;
+
+            // Atualizar os detalhes do produto
+            _product.Defeito = txtDefeito.Text;
+            _product.Origem = txtOrigem.Text;
+            _product.Suborigem = txtSuborigem.Text;
+            _product.Descricao = txtDescricao.Text;
+            _product.NumeroSerie = txtNumeroSerie.Text;
+            _product.NomeProduto = txtNomeProduto.Text;
+            _product.Funcionario = txtFuncionario.Text;
+            _product.Turno = txtTurno.Text;
+            _product.Linha = txtLinha.Text;
+            _product.Setor = txtSetor.Text;
+            _service.UpdateProduct(_product);
+            MessageBox.Show("Registro atualizado com sucesso!");
+        }
+
+        private void btnDeletar_Click(object sender, EventArgs e)
+        {
+            var confirmResult = MessageBox.Show("Tem certeza que deseja deletar este registro?",
+                                                 "Confirmar Deleção",
+                                                 MessageBoxButtons.YesNo);
+            if (confirmResult == DialogResult.Yes)
             {
-                // Exemplo de atualização:
-                _product.Defeito = txtDefeito.Text;
-                _product.Origem = txtOrigem.Text;
-                _product.Suborigem = txtSuborigem.Text;
-                _product.Descricao = txtDescricao.Text;
-                _service.UpdateProduct(_product);
-                MessageBox.Show("Registro atualizado com sucesso!");
+                _service.DeleteProduct(_product);
+                MessageBox.Show("Registro deletado com sucesso!");
+                this.Close();
             }
         }
 
@@ -61,5 +86,4 @@ namespace HistoricoDefeitosProduto
             this.Close();
         }
     }
-
 }

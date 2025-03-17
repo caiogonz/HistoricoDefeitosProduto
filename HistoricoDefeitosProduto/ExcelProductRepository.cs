@@ -15,7 +15,6 @@ namespace HistoricoDefeitosProduto
         public ExcelProductRepository(string filePath)
         {
             _filePath = filePath;
-            // Caso o arquivo não exista, crie-o e adicione o cabeçalho.
             if (!File.Exists(_filePath))
             {
                 using (var package = new ExcelPackage(new FileInfo(_filePath)))
@@ -115,6 +114,24 @@ namespace HistoricoDefeitosProduto
                         ws.Cells[row, 8].Value = product.Origem;
                         ws.Cells[row, 9].Value = product.Suborigem;
                         ws.Cells[row, 10].Value = product.Descricao;
+                        package.Save();
+                        break;
+                    }
+                }
+            }
+        }
+
+        public void Delete(ProductDefect product)
+        {
+            using (var package = new ExcelPackage(new FileInfo(_filePath)))
+            {
+                var ws = package.Workbook.Worksheets["Defeitos"];
+                for (int row = 2; row <= ws.Dimension.End.Row; row++)
+                {
+                    if (ws.Cells[row, 5].Text.Equals(product.NumeroSerie, StringComparison.OrdinalIgnoreCase) &&
+                        ws.Cells[row, 11].Text.Equals(product.DataHora.ToString("g")))
+                    {
+                        ws.DeleteRow(row);
                         package.Save();
                         break;
                     }
