@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HistoricoDefeitosProduto", "HistoricoDefeitosProduto\HistoricoDefeitosProduto.csproj", "{890DCC1F-3B7E-4CEF-81A9-9FD71176953E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{890DCC1F-3B7E-4CEF-81A9-9FD71176953E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{890DCC1F-3B7E-4CEF-81A9-9FD71176953E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{890DCC1F-3B7E-4CEF-81A9-9FD71176953E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{890DCC1F-3B7E-4CEF-81A9-9FD71176953E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF82DCD7-C34E-4C93-A9C8-72ACD01955E6}
+	EndGlobalSection
+EndGlobal
