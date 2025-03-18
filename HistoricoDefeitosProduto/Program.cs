@@ -18,7 +18,7 @@ namespace HistoricoDefeitosProduto
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            string caminhoExcel = Path.Combine(Application.StartupPath, @"C:\Users\caio7\source\repos\HistoricoDefeitosProduto\BancoDados.xlsx");
+            string caminhoExcel = Path.Combine(Application.StartupPath, @"\\mnsnt017\MNS-Files\Manufatura\Caio Gonzaga\BancoDados.xlsx");
             IProductRepository repository = new ExcelProductRepository(caminhoExcel);
             ProductService service = new ProductService(repository);
 
