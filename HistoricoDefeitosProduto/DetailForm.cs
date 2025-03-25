@@ -35,7 +35,7 @@ namespace HistoricoDefeitosProduto
             txtDefeito.Text = _product.Defeito;
             txtOrigem.Text = _product.Origem;
             txtSuborigem.Text = _product.Suborigem;
-            txtDescricao.Text = _product.Descricao;
+            txtAcao.Text = _product.Acao;
             lblDataHora.Text = _product.DataHora.ToString("g");
         }
 
@@ -45,7 +45,7 @@ namespace HistoricoDefeitosProduto
             txtDefeito.ReadOnly = false;
             txtOrigem.ReadOnly = false;
             txtSuborigem.ReadOnly = false;
-            txtDescricao.ReadOnly = false;
+            txtAcao.ReadOnly = false;
             txtNumeroSerie.ReadOnly = false;
             txtNomeProduto.ReadOnly = false;
             txtFuncionario.ReadOnly = false;
@@ -57,7 +57,7 @@ namespace HistoricoDefeitosProduto
             _product.Defeito = txtDefeito.Text;
             _product.Origem = txtOrigem.Text;
             _product.Suborigem = txtSuborigem.Text;
-            _product.Descricao = txtDescricao.Text;
+            _product.Acao = txtAcao.Text;
             _product.NumeroSerie = txtNumeroSerie.Text;
             _product.NomeProduto = txtNomeProduto.Text;
             _product.Funcionario = txtFuncionario.Text;

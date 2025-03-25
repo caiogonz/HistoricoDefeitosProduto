@@ -17,7 +17,7 @@ namespace HistoricoDefeitosProduto
         public string Defeito { get; set; }
         public string Origem { get; set; }
         public string Suborigem { get; set; }
-        public string Descricao { get; set; }
+        public string Acao { get; set; }
         public DateTime DataHora { get; set; } 
     }
 

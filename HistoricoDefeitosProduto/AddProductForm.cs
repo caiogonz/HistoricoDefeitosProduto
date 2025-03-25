@@ -33,7 +33,7 @@ namespace HistoricoDefeitosProduto
                 Defeito = txtDefeito.Text,
                 Origem = txtOrigem.Text,
                 Suborigem = txtSuborigem.Text,
-                Descricao = txtDescricao.Text
+                Acao = txtAcao.Text
             };
 
             _service.AddProduct(product);

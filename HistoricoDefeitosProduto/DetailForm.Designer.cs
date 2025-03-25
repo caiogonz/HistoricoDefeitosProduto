@@ -36,7 +36,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtSuborigem = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtDescricao = new System.Windows.Forms.TextBox();
+            this.txtAcao = new System.Windows.Forms.TextBox();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnDeletar = new System.Windows.Forms.Button();
@@ -193,17 +193,16 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(341, 72);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(55, 13);
+            this.label10.Size = new System.Drawing.Size(32, 13);
             this.label10.TabIndex = 18;
-            this.label10.Text = "Descrição";
+            this.label10.Text = "Ação";
             // 
-            // txtDescricao
+            // txtAcao
             // 
-            this.txtDescricao.Location = new System.Drawing.Point(341, 88);
-            this.txtDescricao.Multiline = true;
-            this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(353, 151);
-            this.txtDescricao.TabIndex = 19;
+            this.txtAcao.Location = new System.Drawing.Point(341, 88);
+            this.txtAcao.Name = "txtAcao";
+            this.txtAcao.Size = new System.Drawing.Size(353, 20);
+            this.txtAcao.TabIndex = 19;
             // 
             // btnEditar
             // 
@@ -263,7 +262,7 @@
             this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.txtDescricao);
+            this.Controls.Add(this.txtAcao);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtSuborigem);
             this.Controls.Add(this.label8);
@@ -311,7 +310,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtSuborigem;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtDescricao;
+        private System.Windows.Forms.TextBox txtAcao;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Button btnDeletar;

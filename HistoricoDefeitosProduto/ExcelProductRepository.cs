@@ -30,7 +30,7 @@ namespace HistoricoDefeitosProduto
                     ws.Cells[1, 7].Value = "Defeito";
                     ws.Cells[1, 8].Value = "Origem";
                     ws.Cells[1, 9].Value = "Suborigem";
-                    ws.Cells[1, 10].Value = "Descricao";
+                    ws.Cells[1, 10].Value = "Acao";
                     ws.Cells[1, 11].Value = "DataHora";
                     package.Save();
                 }
@@ -58,7 +58,7 @@ namespace HistoricoDefeitosProduto
                         Defeito = ws.Cells[row, 7].Text,
                         Origem = ws.Cells[row, 8].Text,
                         Suborigem = ws.Cells[row, 9].Text,
-                        Descricao = ws.Cells[row, 10].Text,
+                        Acao = ws.Cells[row, 10].Text,
                         DataHora = DateTime.Parse(ws.Cells[row, 11].Text)
                     });
                     row++;
@@ -88,7 +88,7 @@ namespace HistoricoDefeitosProduto
                 ws.Cells[row, 7].Value = product.Defeito;
                 ws.Cells[row, 8].Value = product.Origem;
                 ws.Cells[row, 9].Value = product.Suborigem;
-                ws.Cells[row, 10].Value = product.Descricao;
+                ws.Cells[row, 10].Value = product.Acao;
                 ws.Cells[row, 11].Value = product.DataHora.ToString("g");
                 package.Save();
             }
@@ -113,7 +113,7 @@ namespace HistoricoDefeitosProduto
                         ws.Cells[row, 7].Value = product.Defeito;
                         ws.Cells[row, 8].Value = product.Origem;
                         ws.Cells[row, 9].Value = product.Suborigem;
-                        ws.Cells[row, 10].Value = product.Descricao;
+                        ws.Cells[row, 10].Value = product.Acao;
                         package.Save();
                         break;
                     }

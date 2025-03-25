@@ -35,7 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtFuncionario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtDescricao = new System.Windows.Forms.TextBox();
+            this.txtAcao = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -184,22 +184,21 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Colaborador";
             // 
-            // txtDescricao
+            // txtAcao
             // 
-            this.txtDescricao.Location = new System.Drawing.Point(341, 88);
-            this.txtDescricao.Multiline = true;
-            this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(353, 151);
-            this.txtDescricao.TabIndex = 18;
+            this.txtAcao.Location = new System.Drawing.Point(341, 88);
+            this.txtAcao.Name = "txtAcao";
+            this.txtAcao.Size = new System.Drawing.Size(353, 20);
+            this.txtAcao.TabIndex = 18;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(341, 72);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(55, 13);
+            this.label10.Size = new System.Drawing.Size(32, 13);
             this.label10.TabIndex = 19;
-            this.label10.Text = "Descrição";
+            this.label10.Text = "Ação";
             // 
             // btnSalvar
             // 
@@ -217,7 +216,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.txtDescricao);
+            this.Controls.Add(this.txtAcao);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtSuborigem);
             this.Controls.Add(this.label9);
@@ -241,6 +240,7 @@
             this.Text = "AddProductForm";
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
@@ -263,7 +263,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtFuncionario;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtDescricao;
+        private System.Windows.Forms.TextBox txtAcao;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnSalvar;
     }
