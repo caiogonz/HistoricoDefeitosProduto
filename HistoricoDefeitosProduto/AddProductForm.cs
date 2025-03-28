@@ -28,12 +28,19 @@ namespace HistoricoDefeitosProduto
                 Turno = txtTurno.Text,
                 Linha = txtLinha.Text,
                 Setor = txtSetor.Text,
-                NumeroSerie = txtNumeroSerie.Text, 
-                NomeProduto = txtNomeProduto.Text, 
+                TrackID = txtTrackID.Text,
+                NomeProduto = txtNomeProduto.Text,
+                FailLine = txtFailLine.Text,
+                Station = txtStation.Text,
+                FailureDescription = txtFailureDescription.Text,
+                DefectCode = txtDefectCode.Text,
+                Location = txtLocation.Text,
+                Component = txtComponent.Text,
                 Defeito = txtDefeito.Text,
                 Origem = txtOrigem.Text,
                 Suborigem = txtSuborigem.Text,
-                Acao = txtAcao.Text
+                Acao = txtAcao.Text,
+                Comentario = txtComentario.Text
             };
 
             _service.AddProduct(product);

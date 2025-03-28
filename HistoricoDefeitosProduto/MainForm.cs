@@ -32,7 +32,7 @@ namespace HistoricoDefeitosProduto
             string serial = txtSerialBuscar.Text.Trim();
             if (!string.IsNullOrEmpty(serial))
             {
-                var filtered = _service.SearchBySerial(serial);
+                var filtered = _service.SearchByTrackID(serial);
                 dataGridViewProducts.DataSource = filtered;
             }
             else

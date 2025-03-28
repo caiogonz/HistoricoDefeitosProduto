@@ -9,10 +9,9 @@ namespace HistoricoDefeitosProduto
     public interface IProductRepository
     {
         List<ProductDefect> GetAll();
-        List<ProductDefect> GetBySerialNumber(string numeroSerie);
+        List<ProductDefect> GetByTrackID(string trackID);
         void Add(ProductDefect product);
         void Update(ProductDefect product);
         void Delete(ProductDefect product);
     }
-
 }

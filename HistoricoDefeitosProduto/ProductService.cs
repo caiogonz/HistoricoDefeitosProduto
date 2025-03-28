@@ -18,9 +18,9 @@ namespace HistoricoDefeitosProduto
 
         public List<ProductDefect> GetAllProducts() => _repository.GetAll();
 
-        public List<ProductDefect> SearchBySerial(string numeroSerie)
+        public List<ProductDefect> SearchByTrackID(string trackID)
         {
-            return _repository.GetBySerialNumber(numeroSerie);
+            return _repository.GetByTrackID(trackID);
         }
 
         public void AddProduct(ProductDefect product)
@@ -40,5 +40,4 @@ namespace HistoricoDefeitosProduto
             _repository.Delete(product);
         }
     }
-
 }
